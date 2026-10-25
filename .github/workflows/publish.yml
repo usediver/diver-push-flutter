@@ -1,0 +1,15 @@
+# Publishes to pub.dev on a version tag, with no stored secret: pub.dev
+# trusts this repository's GitHub Actions through OIDC once automated
+# publishing is enabled for the package under its admin tab (repository
+# usediver/diver-push-flutter, tag pattern v{{version}}).
+name: Publish
+
+on:
+  push:
+    tags: ["v[0-9]+.[0-9]+.[0-9]+*"]
+
+jobs:
+  publish:
+    permissions:
+      id-token: write
+    uses: dart-lang/setup-dart/.github/workflows/publish.yml@v1

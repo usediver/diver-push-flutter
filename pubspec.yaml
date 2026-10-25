@@ -3,11 +3,8 @@ description: >-
   Register push tokens and report notification opens with Diver Push, so
   campaigns sent from push.usediver.com reach your users and can be measured.
 version: 0.1.0
-repository: https://github.com/usediver/diver-monorepo/tree/develop/diver_push_flutter
-
-# Prototyped inside the monorepo. Publishing waits for its own repository,
-# which is where pub.dev's source links will point.
-publish_to: none
+repository: https://github.com/usediver/diver-push-flutter
+issue_tracker: https://github.com/usediver/diver-push-flutter/issues
 
 environment:
   sdk: ^3.11.0
